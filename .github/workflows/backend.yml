@@ -1,0 +1,25 @@
+name: backend
+on:
+  push:
+    branches: [main]
+    paths: ['backend/**', 'pyproject.toml', 'mypy.ini', '.pre-commit-config.yaml', 'README.md']
+  pull_request:
+    branches: [main]
+    paths: ['backend/**', 'pyproject.toml', 'mypy.ini', '.pre-commit-config.yaml']
+jobs:
+  ci:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: pip install -U pip
+      - run: pip install ruff black mypy
+      - run: pip install -r backend/requirements.txt || true
+      - name: ruff
+        run: ruff --output-format=github .
+      - name: black (check)
+        run: black --check .
+      - name: mypy
+        run: mypy --config-file mypy.ini backend/
