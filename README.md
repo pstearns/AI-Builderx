@@ -9,16 +9,16 @@ This repository is for a ASU-AZNext-Vibe-Coding project. The application is a to
 
 ## Quick links to project documentation
 
-* docs slash charter dot md
-* docs slash architecture dot md
-* docs slash data underscore model dot md
-* docs slash phases dot md
-* docs slash git underscore workflow dot md
-* docs slash swagger underscore plan dot md
-* docs slash quality underscore gates dot md
-* docs slash GUARDRAILS dot md
-* CONTRIBUTING dot md
-* dot github slash pull underscore request underscore template dot md
+* [docs/charter.md](docs/charter.md)
+* [docs/architecture.md](docs/architecture.md)
+* [docs/data\_model.md](docs/data_model.md)
+* [docs/phases.md](docs/phases.md)
+* [docs/git\_workflow.md](docs/git_workflow.md)
+* [docs/swagger\_plan.md](docs/swagger_plan.md)
+* [docs/quality\_gates.md](docs/quality_gates.md)
+* [docs/GUARDRAILS.md](docs/GUARDRAILS.md)
+* [CONTRIBUTING.md](CONTRIBUTING.md)
+* [.github/pull\_request\_template.md](.github/pull_request_template.md)
 
 These files are part of the repository. The agent prompts and plan index are kept outside the repo as requested.
 
