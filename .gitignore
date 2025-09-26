@@ -1,0 +1,16 @@
+# Node
+node_modules/
+frontend/.next/
+frontend/out/
+pnpm-lock.yaml
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+.env
+
+# AI scratch
+/_aiwork/
+/_tmp/
+/_cache/
